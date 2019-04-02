@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Relative url</title>
+  </head>
+  <body>
+    <h1>Welcome to relative url</h1>
+    <!-- <a href="basicapp/other.html"></a> (normally used)-->
+    <a href="{% url 'basicapp:other'%}">The other page</a>
+    <!-- here basicapp = app_name in the urls.py file. It should match. and after the colon,use the name of view to be displayed-->
+    <br>
+    <a href="{% url 'admin:index' %}">for admin</a>
+    <br>
+    <a href="{% url 'index' %}">index</a>
+  </body>
+</html>
